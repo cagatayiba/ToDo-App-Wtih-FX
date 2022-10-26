@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="cellRootPane" prefHeight="88.0" prefWidth="320.0" style="-fx-background-color: #504300;" type="AnchorPane" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="assignmentImage" fitHeight="44.0" fitWidth="52.0" layoutX="14.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/assignment_icon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="cellTaskLabel" layoutX="64.0" layoutY="9.0" prefHeight="13.0" prefWidth="71.0" text="Task" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="cellDescriptionLabel" layoutX="64.0" layoutY="30.0" prefHeight="34.0" prefWidth="243.0" style="-fx-background-color: #ffffff;" text="Desription" textFill="#360404">
+         <effect>
+            <SepiaTone level="0.36" />
+         </effect>
+      </Label>
+      <ImageView fx:id="cellDeleteTaskIcon" fitHeight="26.0" fitWidth="32.0" layoutX="287.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/delete.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="cellTaskDate" layoutX="150.0" layoutY="65.0" prefHeight="18.0" prefWidth="156.0" text="Date Created" textFill="#5eb433" />
+      <ImageView fx:id="updateIcon" fitHeight="26.0" fitWidth="26.0" layoutX="261.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/updateIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</fx:root>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #76d275;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cagatayiba.todoapp.controller.AddItemFormController">
+   <children>
+      <TextField fx:id="taskField" layoutX="200.0" layoutY="156.0" prefHeight="34.0" prefWidth="299.0" promptText="Task" style="-fx-background-color: #e0f7fa;" />
+      <TextField fx:id="descriptionField" layoutX="201.0" layoutY="219.0" prefHeight="34.0" prefWidth="299.0" promptText="Description" style="-fx-background-color: #e0f7fa;" />
+      <JFXButton fx:id="saveButton" layoutX="300.0" layoutY="298.0" onAction="#saveTask" prefHeight="18.0" prefWidth="99.0" style="-fx-background-color: #43a047;" text="Save" textFill="WHITE" />
+      <AnchorPane layoutX="-1.0" prefHeight="102.0" prefWidth="701.0" style="-fx-background-color: #2e7d32;">
+         <children>
+            <Label alignment="CENTER" layoutX="181.0" layoutY="37.0" prefHeight="27.0" prefWidth="339.0" text="ToDo" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="infoLabel" alignment="CENTER" layoutX="232.0" layoutY="265.0" prefHeight="18.0" prefWidth="236.0" textFill="#d50000" />
+      <Label fx:id="successLabel" alignment="CENTER" layoutX="200.0" layoutY="117.0" prefHeight="18.0" prefWidth="299.0" text="ToDo is added successfuly. You can add another one" textFill="#0f31c9" visible="false" />
+      <JFXButton fx:id="toDosButton" layoutX="549.0" layoutY="349.0" prefHeight="26.0" prefWidth="137.0" style="-fx-background-color: #48a999;" />
+   </children>
+</AnchorPane>
